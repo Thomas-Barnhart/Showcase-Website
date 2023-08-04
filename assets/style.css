@@ -1,0 +1,174 @@
+:root {
+    --primary: #154ec9;
+    --secondary: #14686e;
+    --dark: #06067c;
+    --light: #76afaf;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', sans-serif;
+    color: var(--secondary);
+    background-color: var(--light);
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-auto-flow: row;
+    place-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: var(--dark)
+}
+
+.headshot img {
+  max-width: 10%;
+  max-height: 10%;
+}
+
+header {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--primary);
+    box-shadow: 0 5px 50px;
+}
+
+header h1 {
+    color: var(--light);
+    background-color: var(--dark);
+    padding: 10px 1% 10px 4%;
+    margin: 0;
+    font-size: 3vw;
+    line-height: 1;
+}
+
+nav {
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3px 8px;
+    color: var(--dark);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--primary));
+}
+
+p {
+  margin: 0;
+}
+
+figure {
+  display: grid;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+figure > * {
+  grid-area: 1/1;
+  transition: .4s;
+}
+
+figure figcaption {
+  display: grid;
+  align-items: end;
+  font-family: sans-serif;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #0000;
+  padding: .75rem;
+  background: var(--c,#0009);
+  clip-path: inset(0 var(--_i,100%) 0 0);
+  margin: -1px;
+}
+
+figure:hover figcaption {
+  --_i: 0%;
+}
+
+.content{
+  opacity: 0;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  width: 300px;
+  height: 300px;
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  -ms-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  text-align: right;
+}
+
+figure:hover img {
+  transform: scale(1.2);
+}
+
+img {
+  max-width: 50%;
+  max-height: auto;
+  object-fit: contain;
+  border-radius: 5%;
+}
+
+.grid-container {
+  grid-template-columns: 100px 100px 200px;
+}
+
+.grid-container .Weather, .LED, .Calculator, .Pastel, .Run {
+  display: inline-grid;
+  gap: 50px 50px;
+  grid-template-columns: 100px 100px 200px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 992px) {
+    header {
+      padding: 0 0 10px 0;
+      background: var(--dark);
+      justify-content: left;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: right;
+    }
+    nav {
+      background-color: var(--dark);
+      text-align: right;
+      flex-direction: row;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: var(--primary);
+    }
+    .contact {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
