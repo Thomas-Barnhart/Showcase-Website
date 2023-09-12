@@ -22,7 +22,7 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
 # Screenshot of Website
-![Showcase Website](Showcase-Website-Image.png)
+![Showcase Website](./Showcase-Website-Image.png)
 
 # Website URL
 https://thomas-barnhart.github.io/Showcase-Website/
