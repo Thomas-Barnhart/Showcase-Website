@@ -1,106 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All About Thomas Barnhart</title>
-    <link rel="stylesheet" href="./assets/reset.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
-  </head>
-
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="script.js" defer></script>
+    <title>Thomas' Portfolio</title>
+</head>
+<body>
     <header>
-      <div class="headshot"><img src="./assets/images/Thomas Headshot.JPG" alt="Profile Picture of Thomas"></div>
-      <h1>All About Thomas Barnhart</h1>
-      <nav id="nav-bar">
-        <ul>
-          <li><a href="#" id="nav-item">About Me</a></li>
-          <li><a href="#" id="nav-item">Work Samples</a></li>
-          <li><a href="#" id="nav-item">Contact</a></li>
-          <li><a href="#" id="nav-item">Resume</a></li>
-        </ul>
-      </nav>
-    </header><br>
+        <h1>All About Thomas Barnhart</h1>
+        <img src="./assets/images/Thomas Headshot.JPG" alt="Thomas Barnhart's Headshot">
+    </header>
 
-    <section class="banner">
-        <div>
-            <h2>The Life of Thomas Barnhart</h2><br>
-        </div>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello there! My name is Thomas Barnhart and I want to take this chance to let you know a little bit about myself.
+        <!-- Add a line break in HTML for readability -->
+        I have become skilled at coding and look to be innovative in my ideas. My goal is to grab your attention with this exceptional coding showcase.
+        <!-- Add a line break in HTML for readability -->
+        With a deep passion for programming and an insatiable curiosity, I have been learning ways to push the boundaries of what is possible in the digital realm.
+        <!-- Add a line break in HTML for readability -->
+        This coding showcase is a testament to my knowledge of various programming languages and my ability to create ingenious solutions to complex problems.
+        <!-- Add a line break in HTML for readability -->
+        Through this project, I aim to demonstrate my understanding of software development principles, to leave a lasting impression on developers and industry experts alike.
+        <!-- Add a line break in HTML for readability -->
+        My goal in this industry is to reach new heights in the world of coding and technology.</p>
     </section>
 
-    <main>
-      <section class="body">
-        <article>
-          <h2>About Me</h2>
-          <div>
-            <p>
-              Hello there! My name is Thomas Barnhart and I want to take this chance to let you know a little bit about myself.  I have become skilled at coding and look to be innovative in my ideas.  My goal is to grab your attention with this exceptional coding showcase.  With a deep passion for programming and an insatiable curiosity, I have been learning ways to pushed the boundaries of what is possible in the digital realm.  This coding showcase is a testament to my knowledge of various programming languages and my ability to create ingenious solutions to complex problems.  Through this projects, I aim to demonstrated my understanding of software development principles, to leave a lasting impression on developers and industry experts alike. My goal in this industy is to reach new heights in the world of coding and technology.
-            </p>
-            <br>
-            <h3>Get to Know Me Personally</h3>
-            <p>
-              <li>Outside of work I enjoy: Spending time with my beautiful wife, amazing son & daughter and our super sweet goldendoodle Kya</li>
-              <li>Hoobies: cooking, eating, and home renovations</li>
-              <li>Playing sports like: soccer, basketball, and volleyball</li>
+    <section id="work"> <!-- Section for my work to display in cards -->
+        <h2>My Work</h2>
+        <div class="main">
+            <h1>My Projects</h1> <!-- Header to title my projects -->
+            <ul class="cards"> <!-- The start of all my card containers and styling -->
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638886301/EducationHub/photos/lightning-bolts.jpg" alt="Weather - Clouds with Lighting"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Weather Report - MERN Stack</h2>
+                    <p class="card_text">Check out my Weather Report using MERN Stack</p>
+                    <button class="btn card_btn">Click to see more</button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="https://www.matrixvisual.com/wp-content/uploads/2016/07/LED-Wall-Benefits.png" alt="LED Wall - Lights"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">LED Wall - Node/IoT</h2>
+                    <p class="card_text">Check out my LED Wall using Node/IoT</p>
+                    <button class="btn card_btn">Click to see more</button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="https://sharpcalculators.com/cdn/shop/collections/EL760RBBL_Lifestyle_2.jpg?v=1670956975&width=1500" alt="Calculator for Math"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Calculator - React/JavaScript/CSS</h2>
+                    <p class="card_text">Check out my Calculator using React/JavaScript/CSS</p>
+                    <button class="btn card_btn">Click to see more</button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="https://dbdzm869oupei.cloudfront.net/img/vinylrugs/preview/19648.png" alt="Pastel Puzzel Completed"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Pastel Puzzels - MERN Stack</h2>
+                    <p class="card_text">Check out my Pastel Puzzels using MERN Stack</p>
+                    <button class="btn card_btn">Click to see more</button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="https://wesbos.com/static/7cbccafd28dcd792290a86c69bd0155d/6f464/somejs-script-in-head.png" alt="Run Body of Code"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Run Body - HTML/CSS</h2>
+                    <p class="card_text">Check out my Run Body using HTML/CSS</p>
+                    <button class="btn card_btn">Click to see more</button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Flavorful Finds</h2>
+                    <p class="card_text">Check out this collaboration project with some other front end developers</p>
+                    <button class="btn card_btn">Click to see more</button>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
-        </article>
-        <br>
-        <article>
-          <h2>Work Samples</h2>
-          <div class="cards">
-            <p class="Weather">
-              <figure>
-                <figcaption>
-                  <div class="content">Weather Report - MERN Stack</div>
-                </figcaption>
-                  <img src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638886301/EducationHub/photos/lightning-bolts.jpg" alt="Weather - Clouds with Lighting">
-              </figure>
-            </p>
-            <p class="LED">
-              <figure>
-                <figcaption>
-                  <div class="content">LED Wall - Node/IoT</div>
-                </figcaption>
-                  <img src="https://www.matrixvisual.com/wp-content/uploads/2016/07/LED-Wall-Benefits.png" alt="LED Wall">
-              </figure>
-            </p>
-            <p class="Calculator">
-              <figure>
-                <figcaption>
-                  <div class="content">Calculator - React/JavaScript/CSS</div>
-                </figcaption>
-                  <img src="https://sharpcalculators.com/cdn/shop/collections/EL760RBBL_Lifestyle_2.jpg?v=1670956975&width=1500" alt="Calculator">
-              </figure>
-            </p>
-            <p class="Pastel">
-              <figure>
-                <figcaption>
-                  <div class="content">Pastel Puzzels - MERN Stack</div>
-                </figcaption>
-                  <img src="https://dbdzm869oupei.cloudfront.net/img/vinylrugs/preview/19648.png" alt="Pastel Puzzels">
-              </figure>
-            </p>
-            <p class="Run">
-              <figure>
-                <figcaption>
-                  <div class="content">Run Body - HTML/CSS</div>
-                </figcaption>
-                  <img src="https://wesbos.com/static/7cbccafd28dcd792290a86c69bd0155d/6f464/somejs-script-in-head.png" alt="Run Body">
-              </figure>
-            </p>
-          </div>
-          </article>
-      </section><br>
-      <aside>
+    
+    <section id="contact">
         <h2>Contact Me</h2>
-        <form>
-        </form>
-      </aside>
-    </main>
-
-    <footer>
-      <span>Thanks for visiting! Looking forward to making a connection!</span>
-    </footer>
-  </body>
+        <p>Email: tmbarnhart1@gmail.com</p>
+        <p></p>GitHub Page: https://github.com/Thomas-Barnhart</p>
+    </section>
+</body>
 </html>
