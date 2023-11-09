@@ -22,6 +22,7 @@ WHEN I resize the page or view the site on various screens and devices <br>
 THEN I am presented with a responsive layout that adapts to my viewport <br>
 
 # Screenshot of Website
+
 ![Showcase Website](./assets/images/screenshot-showcase.png)
 
 # Website URL
