@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="./assets/style.css">
-    <script src="script.js" defer></script>
+
+    <!-- Link to external JavaScript file with defer attribute -->
+    <script src="./assets/script.js" defer></script>
+
+    <!-- Title of the webpage -->
     <title>Thomas' Portfolio</title>
 </head>
 <body>
+    <!-- Header section with a title and an image -->
     <header>
         <h1>All About Thomas Barnhart</h1>
         <img src="./assets/images/Thomas Headshot.JPG" alt="Thomas Barnhart's Headshot">
     </header>
 
+    <!-- Navigation menu with links to different sections -->
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
@@ -22,99 +31,108 @@
         </ul>
     </nav>
 
+    <!-- About Me section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello there! My name is Thomas Barnhart and I want to take this chance to let you know a little bit about myself.
-        <!-- Add a line break in HTML for readability -->
-        I have become skilled at coding and look to be innovative in my ideas. My goal is to grab your attention with this exceptional coding showcase.
-        <!-- Add a line break in HTML for readability -->
-        With a deep passion for programming and an insatiable curiosity, I have been learning ways to push the boundaries of what is possible in the digital realm.
-        <!-- Add a line break in HTML for readability -->
-        This coding showcase is a testament to my knowledge of various programming languages and my ability to create ingenious solutions to complex problems.
-        <!-- Add a line break in HTML for readability -->
-        Through this project, I aim to demonstrate my understanding of software development principles, to leave a lasting impression on developers and industry experts alike.
-        <!-- Add a line break in HTML for readability -->
-        My goal in this industry is to reach new heights in the world of coding and technology.</p>
+        <p>
+            Hello there! My name is Thomas Barnhart and I want to take this chance to let you know a little bit about myself.
+            I have become skilled at coding and look to be innovative in my ideas.
+            My goal is to grab your attention with this exceptional coding showcase.
+            With a deep passion for programming and an insatiable curiosity, I have been learning ways to push the boundaries of what is possible in the digital realm.
+            This coding showcase is a testament to my knowledge of various programming languages and my ability to create ingenious solutions to complex problems.
+            Through this project, I aim to demonstrate my understanding of software development principles, to leave a lasting impression on developers and industry experts alike.
+            My goal in this industry is to reach new heights in the world of coding and technology.
+        </p>
     </section>
 
-    <section id="work"> <!-- Section for my work to display in cards -->
+    <!-- Work section with a list of projects displayed as cards -->
+    <section id="work">
         <h2>My Work</h2>
         <div class="main">
             <h1>My Projects</h1> <!-- Header to title my projects -->
-            <ul class="cards"> <!-- The start of all my card containers and styling -->
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="https://cdn.pixabay.com/photo/2014/06/26/22/02/lightning-378069_640.jpg" alt="Weather - Clouds with Lighting"></div>
-                  <div class="card_content">
-                    <h2 class="card_title">Weather Report - MERN Stack</h2>
-                    <p class="card_text">Check out my Weather Report using MERN Stack</p>
-                    <button class="btn card_btn">Click to see more</button>
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="https://ae01.alicdn.com/kf/S1c770e9f470e4a0785b2a5709d7a1828e.jpg_640x640q90.jpg" alt="LED Wall - Lights"></div>
-                  <div class="card_content">
-                    <h2 class="card_title">LED Wall - Node/IoT</h2>
-                    <p class="card_text">Check out my LED Wall using Node/IoT </p>
-                    <button class="btn card_btn">Click to see more</button>
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="https://nnedv.org/wp-content/uploads/2014/07/MISC_EJ_calculator-640x366.jpg" alt="Calculator for Math"></div>
-                  <div class="card_content">
-                    <h2 class="card_title">Calculator - React/JavaScript/CSS</h2>
-                    <p class="card_text">Check out my Calculator using React/JavaScript/CSS</p>
-                    <button class="btn card_btn">Click to see more</button>
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="https://media.licdn.com/dms/image/C4E12AQH3LGy9TwfmWA/article-cover_image-shrink_600_2000/0/1520044803203?e=2147483647&v=beta&t=GpU1dhoDn4okwbDH4pe6318tG8XEQfk-u7Y09LqwzQI" alt="Pastel Puzzel Completed"></div>
-                  <div class="card_content">
-                    <h2 class="card_title">Pastel Puzzels - MERN Stack</h2>
-                    <p class="card_text">Check out my Pastel Puzzels using MERN Stack</p>
-                    <button class="btn card_btn">Click to see more</button>
-                  </div>
-                </div>
-              </li>
 
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="https://domesticfits.com/wp-content/uploads/2023/08/ecuadorian-food-green-chips-640x366.jpeg"></div>
-                  <div class="card_content">
-                    <h2 class="card_title">Flavorful Finds</h2>
-                    <p class="card_text">Check out this collaboration project with some other front end developers</p>
-                    <a href="https://anewgard41.github.io/Flavor-Finds-Recipe-Finder/">
-                      <button class="btn card_btn">Click to see more</button>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li class="cards_item">
-                <div class="card">
-                  <div class="card_image"><img src="https://media.licdn.com/dms/image/C5612AQEWhA3D2Pickw/article-cover_image-shrink_600_2000/0/1520057496076?e=2147483647&v=beta&t=STYSmexjRQKxZHLBAA9L_djR02Q83txCiZ2B2IJ8YTA" alt="TrailBuddy"></div>
-                  <div class="card_content">
-                    <h2 class="card_title">TrailBuddy</h2>
-                    <p class="card_text">Check out my teams Full Stack Development</p>
-                    <a href="https://trail-buddy-cary-nc-4eb34ba4009f.herokuapp.com/">
-                      <button class="btn card_btn">Click to see more</button>
-                    </a>
-                  </div>
-                </div>
-              </li>
+            <!-- List of card containers with project details -->
+            <ul class="cards">
+                <!-- Card 1: Weather Dashboard -->
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="https://cdn.pixabay.com/photo/2014/06/26/22/02/lightning-378069_640.jpg" alt="Weather - Clouds with Lighting"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Weather Dashboard - JavaScript</h2>
+                            <p class="card_text">Check out my Weather Dashboard for a 5 day forecast for your area</p>
+                            <a class="btn card_btn" href="https://thomas-barnhart.github.io/5-Day-Weather-Dashboard/">Click to see more</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Card 2: Daily Planner - HTML/CSS -->
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="https://ae01.alicdn.com/kf/HTB1ECNVbmWD3KVjSZSgq6ACxVXaR/Daily-Plan-Time-Management-day-Schedule-Learning-Student-s-Self-discipline-Notepad-Daily-Planner-Schedule-Planner.jpg" alt="Daily Planner"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Daily Planner - HTML/CSS</h2>
+                            <p class="card_text">Check out my this daily planner to help you manage your time effectively</p>
+                            <button class="btn card_btn" href="">Click to see more</button>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Card 3: README Generator - JavaScript -->
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="https://i.redd.it/yzafkugnbln01.png" alt="README Generator"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">README Generator - JavaScript</h2>
+                            <p class="card_text">Check out this README Generator that I created to help have a porfessional README</p>
+                            <button class="btn card_btn" href="">Click to see more</button>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Card 4: Password Generator - CSS/JS -->
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="https://staysafeonline.org/wp-content/uploads/2017/09/Depositphotos_21906991_m-2015.jpg" alt="Password Generator"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Password Generator - CSS/JS</h2>
+                            <p class="card_text">Check out this Password Generator the next time you have challenges creating one</p>
+                            <button class="btn card_btn" href="https://thomas-barnhart.github.io/Password-Generator-JavaScript/">Click to see more</button>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Card 5: Flavorful Finds -->
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="https://domesticfits.com/wp-content/uploads/2023/08/ecuadorian-food-green-chips-640x366.jpeg" alt="Flavor-Finds-Recipe-Finder"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Flavorful Finds</h2>
+                            <p class="card_text">Check out this collaboration project with some other front end developers</p>
+                            <a class="btn card_btn" href="https://anewgard41.github.io/Flavor-Finds-Recipe-Finder/">Click to see more</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Card 6: TrailBuddy -->
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="https://media.licdn.com/dms/image/C5612AQEWhA3D2Pickw/article-cover_image-shrink_600_2000/0/1520057496076?e=2147483647&v=beta&t=STYSmexjRQKxZHLBAA9L_djR02Q83txCiZ2B2IJ8YTA" alt="TrailBuddy"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">TrailBuddy</h2>
+                            <p class="card_text">Check out my team's Full Stack Development for your hiking needs</p>
+                            <a class="btn card_btn" href="https://trail-buddy-cary-nc-4eb34ba4009f.herokuapp.com/">Click to see more</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
-          </div>
-        </article>
-      </section>
-      <aside>
-        <h2>Contact Me</h2>
-        <p>Email: tmbarnhart1@gmail.com</p>
-        <p></p>GitHub Page: https://github.com/Thomas-Barnhart</p>
+        </div>
     </section>
+
+    <!-- Aside section for contact information -->
+    <aside id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:tmbarnhart1@gmail.com">tmbarnhart1@gmail.com</a></p>
+        <p>GitHub Pages: <a href="https://github.com/Thomas-Barnhart">https://github.com/Thomas-Barnhart</a></p>
+    </aside>
 </body>
 </html>

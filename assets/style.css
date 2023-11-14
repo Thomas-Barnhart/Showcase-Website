@@ -104,6 +104,7 @@ vertical-align: middle;
 color: #ffffff;
 padding: 0.8rem;
 font-size: 14px;
+text-align: center;
 text-transform: uppercase;
 border-radius: 4px;
 font-weight: 400;
@@ -173,6 +174,21 @@ line-height: 1.5;
 margin-bottom: 1.25rem;    
 font-weight: 400;
 }
+
+.cards_item {
+  max-width: 100%;
+}
+
+.card_image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: middle;
+  border-style: none;
+  max-height: 200px;
+  width: 100;
+}
+
 .made_by{
 font-weight: 400;
 font-size: 13px;
@@ -191,5 +207,9 @@ text-align: center;
 
   section {
       padding: 20px;
+  }
+
+  .cards_item {
+      max-width: 100%;
   }
 }
